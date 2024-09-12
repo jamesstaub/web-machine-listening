@@ -1,10 +1,14 @@
-This code is published as part of the [corresponding blog article](https://www.toptal.com/webassembly/webassembly-rust-tutorial-web-audio) at the Toptal Engineering Blog.
+# Web Machine Listening
+An experiment using WebAssembly to run a Rust audio processing and trigger MIDI events to control an Elektron Octatrack.
 
-Visit https://www.toptal.com/blog and subscribe to our newsletter to read great articles!
 
-* * *
+The basic use case is a diatonic pitch harmonizer of input audio, where the octatrack's pitch controls are modulated to different chord voicings within a diatonic scale depending on the current note. This is accomplished with a pitch detection audio node built in Rust and running in the browser via the web audio API. A monophonic instrument's pitch detected by the app will trigger MIDI messages to control Scenes or pitch modulation of track on the Octatrack.
 
-# Quick Start: Cloning, Building, and Running
+## Attribution 
+This code is forked from the very helpful Rust/Webaudio tutorial published as part of the [corresponding blog article](https://www.toptal.com/webassembly/webassembly-rust-tutorial-web-audio) at the Toptal Engineering Blog.
+
+
+## Quick Start: Cloning, Building, and Running
 
 Assuming prerequisites are installed, the following steps should get the app running on your system:
 
@@ -59,7 +63,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Developing the React frontend
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 

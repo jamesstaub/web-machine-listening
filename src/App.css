@@ -11,7 +11,7 @@
 
 .App-header {
   font-size: 1.5rem;
-  margin: 10%;
+  margin: 2rem;
 }
 
 .App-content {
@@ -21,7 +21,7 @@
 
 .Pitch-readout {
   margin-top: 5vh;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 button {
@@ -40,4 +40,16 @@ button {
 
 button:hover {
   background-color: rgb(45, 125, 252);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
